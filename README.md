@@ -1,24 +1,12 @@
-# README
+# Use JSONB fields as collections of embedded models
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+See complete guide in my blogpost: [Store collections in JSONB field](https://blog.michalvalasek.com/posts/store-collections-in-jsonb-field/)
 
-Things you may want to cover:
+### Requirements
+You need ruby 2.6.1 and PostgreSQL 11 installed. _Older versions should work too but you'll have to update the `Gemfile` and `.ruby-version` files._
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### Setup
+- clone this repo
+- create the database with sample data: `bundle exec rails db:setup`
+- start server `bundle exec rails s`
+- browse to [localhost:3000](http://localhost:3000)
